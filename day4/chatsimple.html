@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCSIhk0HA_kHZ5C_iHMBPGg5RX9GI5UmNI",
+            authDomain: "chatsimpleboat.firebaseapp.com",
+            databaseURL: "https://chatsimpleboat.firebaseio.com",
+            projectId: "chatsimpleboat",
+            storageBucket: "chatsimpleboat.appspot.com",
+            messagingSenderId: "710820199995"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <title>Program Chat boat</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- d-none d-sm-block -->
+            <div class="col-md-8 text-center mt-5">
+                <h1 class="">ช่องแชท</h1>
+                <div class="row">
+                    <div class="col-md-12 border pre-scrollable datashow" style="height:400px;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="text-left datafriend" style="display:none;">
+                <h4>คุณ :</h4>
+                <h3>ทดสอบ</h3>
+            </div>
+            <div class="text-right datayou" style="display:none;">
+                <h4>คุณ :</h4>
+                <h3>ทดสอบ</h3>
+            </div>
+            <div class="mt-5 col-md-4 ">
+                <h1>ทดสอบโปรแกรมแชท</h1>
+
+
+                <from>
+                    <h3 class="mt-5">กรอกชื่อ</h3>
+                    <div class="form-group">
+                        <input type="text" id="txtname" class="form-control" placeholder="ชื่อ">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">ข้อความที่ส่ง:</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                </from>
+                <div class="col-sm-12">
+                    <button type="button" id="btnsenddata" class="btn btn-success">ส่งข้อความ</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div>
+
+        </div>
+    </div>
+    <script src="mainscript.js"></script>
+</body>
+
+</html>

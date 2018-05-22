@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day4</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    <button id="btnok">Add</button>
+    <input type="text" id="txtname" placeholder="tt">
+    <!-- <div id="result"></div>
+    <table id="films">
+        <thead>
+            <tr>
+                <td>
+                    No
+                </td>
+                <td>
+                    name
+                </td>
+                <td>
+                    mobile
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table> -->
+    <script>
+        $(function () {
+            $('#btnok').click(function () {
+                // var xhttp = new XMLHttpRequest();
+                // xhttp.onreadystatechange = function () {
+                //     if (this.readyState == 4 && this.status == 200) {
+                //         $('#result').html(xhttp.responseText)
+                //     }
+                // };
+
+                // xhttp.open("GET", "https://swapi.co/api/people/1/", true);
+                // xhttp.send();
+
+                // $.get('https://swapi.co/api/people/1/')
+                //     .then(function (response) {
+                //         console.log(response)
+                //         $.each(response.films, function (index, value) {
+                //             $('table#films tbody').append(
+                //                 `
+                //                 <tr>
+                //                 <td>${index}</td>
+                //                 <td>${value}</td>
+                //                 `
+                //             )
+                //         })
+                //     })
+
+                // $.post('https://httpbin.org/post', {
+                //         name: $('#txtname').val()
+                //     })
+                //     .then((data) => {
+                //         console.log(data)
+                //     })
+                // fetch('https://swapi.co/api/people/1/')
+                //     .then(response => {
+                //         response.json()
+                //             .then(data => {
+                //                 console.log(data)
+                //             })
+                //     })
+
+                var people1 = fetch('https://swapi.co/api/people/1')
+                    .then(res => {
+                        return res.json()
+                    });
+
+                var people2 = fetch('https://swapi.co/api/people/1')
+                    .then(res => {
+                        return res.json()
+                    });
+
+                Promise.all([people1, people2]).then(res => {
+                    console.log(res)
+                }).catch(err => console.log(err))
+            });
+        });
+    </script>
+</body>
+
+</html>

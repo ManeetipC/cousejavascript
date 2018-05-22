@@ -1,0 +1,7 @@
+ถ้าใช้ jquery ควรประกาศใน docmentready เพื่อรอให้ element โหลดเสร็จก่อนจะทำให้ไม่ติดบัค
+$(function () { });
+
+$(docment).ready(function() { });
+
+เขียนได้ 2 แบบเพื่อรอ docment ready
+

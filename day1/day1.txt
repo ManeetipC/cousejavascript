@@ -1,0 +1,17 @@
+http://bit.ly/frontend_bootcamp
+123 == "123" if not type ชนิดตัวแปร
+123 === 123 if check type ชนิดตัวแปร
+การประกาศตัวแปร 
+var เป็น ยุคเก่า
+let คล้าย var const เป็นการประกาศตัวแปรแบบแก้ไขไม่ได้ เป็นยุคใหม
+let a = [1,2,3]
+typeof a คือการเช็ค type ของตัวแปรนั้นๆ 
+
+infinity ค่าที่หาร 0 
+nan คือการแปลงค่าไม่ได้
+indexใน array สามารถเป็น string ได้ a[0 //แบบอาเรย์] a[แบบใส่ค่า //'แบบ object']
+anonymous function คือฟังก์ชั่นที่ไม่มีชื่อ
+Array.unshift() คล้าย push แต่เพิ่มข้างหน้า
+
+
+git

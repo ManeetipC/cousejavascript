@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+       <script>
+        function test(){
+            fetch('http://localhost/homework1.json')
+            .then(data => data.json())
+                .then(json => console.log(json))
+            .catch(err => console.log(err))
+        }
+        
+        
+        </script>
+    </head>
+    <body >
+        <p>asd</p>
+        <button onclick="test()">test</button>
+        
+    </body>
+</html>

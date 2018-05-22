@@ -1,0 +1,8 @@
+กด ปุ่ม windows+ตัวหนอน จะได้  `
+
+ถ้าต้องการ debug ใน google chome ให้พิมคำสั่ง debugger;ดักไว้ก่อนโค้ดที่ต้องการจะ debug
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+promise
+async คือการทำงานไม่ตลอด สามารถทำงานอื่นร่วมกันได้ เช่น event click ทำงานเป็นแบลคกราวเมื่อทำงาน สามารถสั่งทำงานอย่างอื่นได้

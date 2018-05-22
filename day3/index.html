@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Homework2</title>
+</head>
+
+<body style="background-color:whitesmoke; height:100%;">
+    <nav class="navbar bg-primary">
+        <div class="col-sm-2">
+            asd
+        </div>
+        <div class="col-sm-10 text-right">
+            asdddd
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2 bg-danger">
+                <form class="form-inline mt-2">
+                    <input type="text" class="form-control">
+                </form>
+                <ul class="fa-ul">
+
+
+                    <li>
+                        <li>
+                            <span class="fa">
+                                <i class="fas fa-check-square"></i>
+                            </span> Dashbroard</li>
+                    </li>
+                    <li>
+                        <li>
+                            <span class="fa">
+                                <i class="fas fa-check-square"></i>
+                            </span> Catalog</li>
+                    </li>
+                    <li>
+                        <span class="fa">
+                            <i class="fas fa-check-square"></i>
+                        </span> Sales</li>
+                    </li>
+                    <li>
+                        <span class="fa">
+                            <i class="fas fa-check-square"></i>
+                        </span> Customers</li>
+                    </li>
+                    <li>
+                        <span class="fa">
+                            <i class="fas fa-check-square"></i>
+                        </span> Promotions</li>
+                    </li>
+                    <li>
+                        <span class="fa">
+                            <i class="fas fa-check-square"></i>
+                        </span> Content Management</li>
+                    </li>
+                    <li>
+                        <span class="fa">
+                            <i class="fas fa-check-square"></i>
+                        </span> Configuration</li>
+                    </li>
+                </ul>
+            </div>
+            <div class=" col-sm-10 ">
+                <div class="container">
+                    <div class="row mt-3">
+                        <div class="col-sm-3">
+                            <h3>Products</h1>
+                        </div>
+                        <div class="col-sm-9 text-right">
+                            <button type="button" class="btn btn-primary">
+                                <span class="fa fa-plus"></span> Add New
+                            </button>
+                            <button type="button" class="btn btn-primary" style="background-color:purple">
+                                <span class="fa fa-file"></span> Download Catalog as PDF
+                            </button>
+
+                            <button type="button" class="btn btn-success">
+                                <span class="fa fa-download"></span>Export</button>
+                            <button type="button" class="btn btn-success">
+                                <span class="fa fa-upload"></span>Import</button>
+                            <button type="button" class="btn btn-danger">
+                                <span class="fa fa-trash"></span>Delete (selected)</button>
+                        </div>
+                    </div>
+                    <div class="row mt-3" style="background-color: white;">
+                        <div class="col-sm-6 mt-3">
+                            <from>
+                                <div class="form-group row">
+                                    <label for="txtusername" class="col-sm-4 col-form-label">Product Name</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="txtusername" placeholder="">
+                                    </div>
+                                </div>
+                            </from>
+                            <from>
+                                <div class="form-group row">
+                                    <label for="txtcategory" class="col-sm-4 col-form-label">Category</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="txtcategory" placeholder="">
+                                    </div>
+                                </div>
+                            </from>
+                            <from>
+                                <div class="form-group row">
+                                    <label for="inlineCheckbox1" class="col-sm-4 col-form-label">Search sub categories</label>
+                                    <div class="col-sm-8 ">
+                                        <input class="" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    </div>
+                                </div>
+                            </from>
+                            <from>
+                                <div class="form-group row">
+                                    <label for="txtmanu" class="col-sm-4 col-form-label">Manufacturer</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="txtmanu" placeholder="">
+                                    </div>
+                                </div>
+                            </from>
+                            <from>
+                                <div class="form-group row">
+                                    <label for="txtvendor" class="col-sm-4 col-form-label">Vendor</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="txtvendor" placeholder="">
+                                    </div>
+                                </div>
+                            </from>
+                        </div>
+                        <div class="col-sm-6 mt-3">
+                            <from>
+                                <div class="form-group row">
+                                    <label for="txtstore" class="col-sm-4 col-form-label">Store</label>
+                                    <div class="col-sm-8">
+                                        <select id="txtstore" class="custom-select">
+                                            <option selected>All</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </from>
+                            <from>
+                                <div class="form-group row">
+                                    <label for="txtwerehouse" class="col-sm-4 col-form-label">Warehouse</label>
+                                    <div class="col-sm-8">
+                                        <select id="txtwerehouse" class="custom-select">
+                                            <option selected>All</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </from>
+                            <from>
+                                <div class="form-group row">
+                                    <label for="txtproducttype" class="col-sm-4 col-form-label">Product type</label>
+                                    <div class="col-sm-8">
+                                        <select id="txtproducttype" class="custom-select">
+                                            <option selected>All</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </from>
+                            <from>
+                                <div class="form-group row">
+                                    <label for="txtpublished" class="col-sm-4 col-form-label">Published</label>
+                                    <div class="col-sm-8">
+                                        <select id="txtpublished" class="custom-select">
+                                            <option selected>All</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </from>
+                            <from>
+                                <div class="form-group row">
+                                    <label for="txtpublished" class="col-sm-4 col-form-label">Go directly to product SKU</label>
+                                    <div class="col-sm-6">
+                                        <div class="input-group">
+
+                                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text bg-primary">GO</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </from>
+                        </div>
+                        <div class="col-sm-12 text-center mb-3">
+                            <button type="button" class="btn btn-info">
+                                <span class="fa fa-search-minus"></span> Search
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row mt-3" style="background-color: white;">
+                        <div class="container mt-3">
+                            <div class="col-sm-12">
+                                <table class="table table-hover">
+                                    <tr>
+                                        <th>row</th>
+                                        <th>name</th>
+                                        <th>mobile</th>
+                                        <th>status</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>boat</td>
+                                        <td>085</td>
+                                        <td>ok</td>
+                                    </tr>
+                                    <tr>
+                                        <td>123</td>
+                                        <td>555</td>
+                                        <td>23123</td>
+                                        <td>124125</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>boat</td>
+                                        <td>085</td>
+                                        <td>ok</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

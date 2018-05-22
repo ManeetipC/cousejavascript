@@ -1,0 +1,8 @@
+scss คือ css ขั้นสูง
+
+ตัวอย่างการสร้าง ปลั๊กอิน เพื่อมา . หลังค่าต่างๆ 
+$.fn.highlight = function () {
+   $(this).css('color', 'yellow');
+   return this;
+};
+$('span').highlight();

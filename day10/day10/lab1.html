@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="lib.js"></script>
+  <title>Redux from scratch</title>
+</head>
+
+<body>
+  <div id="root" style="text-align: center;font-size: 50px;">0</div>
+  <div id="root2" style="text-align: center;font-size:50px;">0</div>
+  <div id="root3" style="text-align: center;font-size:50px;">0</div>
+  <div id="root4" style="text-align: center;font-size:50px;">0</div>
+  <script type="text/javascript">
+    'use strict';
+    // -----------------------------------------------------------------
+    // 1. สร้าง Action
+    function IncreamentBy(number) {
+      return { type: 'INCREMENT', amount: number }
+    }
+    function DeIncrementBy(number) {
+      return { type: 'DEINCREMENT', amount: number }
+    }
+    function kooncrementBy(number) {
+      return { type: 'KOONINCREMENT', amount: number }
+    }
+    function harncrementBy(number) {
+      return { type: 'HARNINCREMENT', amount: number }
+    }
+    // -----------------------------------------------------------------
+    // 2. สร้าง Reducer
+    function myReducer(state = { count: 0, decount: 0, kooncount: 2, harncount: 2 }, action) {
+      switch (action.type) {
+        case 'INCREMENT':
+          return { ...state, count: state.count + action.amount };
+        case 'DEINCREMENT':
+          return { ...state, decount: state.decount - action.amount }
+        case 'KOONINCREMENT':
+          return { ...state, kooncount: state.kooncount * action.amount }
+        case 'HARNINCREMENT':
+          return { ...state, harncount: state.harncount / action.amount }
+        default:
+          return state;
+      }
+    }
+    // -----------------------------------------------------------------
+    // 3. สร้าง Store
+    const store = createStore(myReducer);
+    // -----------------------------------------------------------------
+    // 4. Subcribe listener
+    function myListener() {
+      const state = store.getState();
+      document.getElementById("root").innerHTML = '+ ' + state.count
+      document.getElementById("root2").innerHTML = '- ' + state.decount
+      document.getElementById("root3").innerHTML = '* ' + state.kooncount
+      document.getElementById("root4").innerHTML = '/ ' + state.harncount
+      console.log('+ ' + state);
+      console.log('-----------------------');
+    }
+
+    // -----------------------------------------------------------------
+    // Subcribe listener
+    store.subscribe(myListener);
+    // -----------------------------------------------------------------
+    // 5. Dispatch Action
+    setInterval(() => store.dispatch(IncreamentBy(2)), 2000)
+    setInterval(() => store.dispatch(DeIncrementBy(2)), 2000)
+    setInterval(() => store.dispatch(kooncrementBy(2)), 2000)
+    setInterval(() => store.dispatch(harncrementBy(2)), 2000)
+  </script>
+</body>
+
+</html>

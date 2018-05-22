@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>เว็บของฉัน</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    <!-- <nav class="navbar bg-light">123</nav>
+        <div class="container">
+
+            <div class="col-md-4 offset-md-4">
+                <from>
+                    <div class="form-group">
+                        <label for="txtusername">Username</label>
+                        <input type="text" id="txtusername" class="form-control">
+                    </div>
+                </from>
+
+                <from>
+                    <div class="form-group">
+                        <label for="txtpassword">Password</label>
+                        <input type="text" id="txtpassword" class="form-control">
+                    </div>
+                </from>
+
+            </div> -->
+    <!-- 
+            <h1>Hello World</h1>
+            Search data:
+            <input type="text" placeholder="ทดสอบ">
+            <button onclick="console.log(123)">123</button>
+            <br>
+            <h2>Section 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ab quibusdam aspernatur rerum velit accusantium consequatur
+                fuga praesentium impedit, magni assumenda optio voluptatibus aperiam rem facilis, amet eum, in temporibus.
+
+            </p>
+
+            <h2>Section 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto amet voluptatem, dolores inventore assumenda quis quidem
+                neque magnam iure iusto at asperiores odit quae nemo tempora consequatur. Fuga, qui fugit.
+
+            </p>
+            <table class="table table-hover">
+                <tr>
+                    <th>row</th>
+                    <th>name</th>
+                    <th>mobile</th>
+                    <th>status</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>boat</td>
+                    <td>085</td>
+                    <td>ok</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>555</td>
+                    <td>23123</td>
+                    <td>124125</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>boat</td>
+                    <td>085</td>
+                    <td>ok</td>
+                </tr>
+            </table> -->
+    <!-- </div> -->
+    <nav class="navbar" style="background:#3b5998;height:70px;">
+        <div class="offset-md-1 col-sm-5">
+            <h1 style="color:white; font-weight: bold;">BOATBOOK</h1>
+        </div>
+        <div class="col-sm-6">
+
+            <div class="form-row">
+
+                <div class="col-md-6">
+                    <div class="form-row">
+                        <div class="col-sm-6">
+                            <label style="margin-bottom:-5px;color:white;">รหัสเข้าใช้งาน</label>
+                            <input type="text" id="txtusername" class="form-control" placeholder="User">
+
+                        </div>
+                        <div class="col-sm-6">
+                            <label style="margin-bottom:-5px;color:white;">พาสเวิร์ด</label>
+                            <input type="text" id="txtpass" class="form-control" placeholder="Pass">
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <button type="button" onclick="login()" class="btn btn-primary">เข้าสู่ระบบ</button>
+                </div>
+            </div>
+            <!-- <label>วันเกิด</label> -->
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <!-- d-none d-sm-block -->
+            <div class="col-md-6 text-center ">
+                <h1 class="d-block d-sm-none">ไปโลกใหม่ของพวกเรากัน</h1>
+                <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/GwFs3_KxNjS.png">
+            </div>
+            <!-- d-block d-sm-none -->
+            <div class="offset-md-1 col-md-5 ">
+                <h1>สมัครใช้งาน</h1>
+                <h3>กรอกข้อมูลสิ</h3>
+                <from>
+                    <div class="form-row mb-3">
+                        <div class="col-md-6">
+                            <input type="text" id="txtname" class="form-control" placeholder="พิมพ์ชื่อ">
+                            <div class="invalid-feedback">
+                                กรุณากรอกชื่อ
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="txtlastname" class="form-control" placeholder="นามสกุล">
+                            <div class="invalid-feedback">
+                                กรุณากรอกนามสกุล
+                            </div>
+                        </div>
+
+                    </div>
+                </from>
+
+                <from>
+                    <div class="form-group">
+                        <input type="email" id="txtemail" class="form-control" placeholder="อีเมลล์">
+                        <div class="invalid-feedback checkdataemail">
+                            กรุณากรอกอีเมลล์
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="txtpassword" class="form-control" placeholder="รหัสผ่าน">
+                        <div class="invalid-feedback">
+                            กรุณากรอกพาสเวิร์ด
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtmobile" class="form-control" placeholder="หมายเลขโทรศัพท์">
+                        <div class="invalid-feedback checkdatamobile">
+                            กรุณากรอกเบอร์โทรศัพท์
+                        </div>
+                    </div>
+
+                </from>
+
+                <from>
+                    <label>วันเกิด</label>
+                    <div class="form-row" style="margin-bottom:15px;">
+
+                        <div class="col-md-6">
+                            <div class="form-row">
+                                <div class="col-sm-4">
+                                    <select id="selectday" class="custom-select">
+                                        <option selected>วัน</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                    <div class="invalid-feedback text-center">
+                                        เลือกวัน
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <select id="selectmonth" class="custom-select ">
+                                        <option selected>เดือน</option>
+                                        <option value="1">ม.ค.</option>
+                                        <option value="2">ก.พ.</option>
+                                        <option value="3">มี.ค.</option>
+                                    </select>
+                                    <div class="invalid-feedback text-center">
+                                        เลือกเดือน
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <select id="selectyear" class="custom-select ">
+                                        <option selected>ปี</option>
+                                        <option value="1">2018</option>
+                                        <option value="2">2017</option>
+                                        <option value="3">2016</option>
+                                    </select>
+                                    <div class="invalid-feedback text-center">
+                                        เลือกปี
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>ทดสอบ</label>
+                        </div>
+                    </div>
+                </from>
+                <!-- <from>
+                    <div class="form-check form-check-inline">
+
+                        <div class="col-md-12 ">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">หญิง</label>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">ชาย</label>
+
+                        </div>
+                    </div>
+                </from> -->
+                <div class="col-sm-12">
+                    <button type="button" onclick="checkdata()" class="btn btn-success">สมัครสมาชิก</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div>
+
+        </div>
+    </div>
+    <script src="mainscript.js"></script>
+</body>
+
+</html>
